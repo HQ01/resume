@@ -36,7 +36,7 @@
 % Academic honor
 % First argument: honor name
 % Second argument: Date
-\newcommand{\honor}[2]{#1 & #2 \\}
+\newcommand{\honor}[2]{#1 \hfill #2}
 
 % Horizontal line to separate sections
 \newcommand{\hr}{
@@ -54,8 +54,8 @@
 }
 
 % Project information
-\newcommand{\project}[4]{
-{\bf #1}: #2  & {\bf #3} & #4 \\
+\newcommand{\project}[5]{
+{\bf #1}: #2  & #3 & {\bf #4} & #5 \\
 }
 
 % Commands used for typesetting publication
