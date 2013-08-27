@@ -48,7 +48,13 @@
 }
 
 % Job header.
-\newcommand{\job}[3]{
+\newcommand{\job}[4]{
+\noindent {\bf #1}, #2 \hfill {\bf #3} $\vert$ #4\\
+\vspace{-6mm}
+}
+
+% Job header.
+\newcommand{\research}[3]{
 \noindent {\bf #1} \hfill {\bf #2} $\vert$ #3\\
 \vspace{-6mm}
 }
