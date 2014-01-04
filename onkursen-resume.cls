@@ -53,9 +53,15 @@
 \vspace{-6mm}
 }
 
-% Job header.
-\newcommand{\research}[3]{
-\noindent {\bf #1} \hfill {\bf #2} $\vert$ #3\\
+% Research header.
+% 1. Project name
+% 2. Affiliation
+% 3. Language
+% 4. Dates
+\newcommand{\research}[4]{
+%\noindent {\bf #1} \hfill {\bf #3} $\vert$ #4\\
+\noindent {\bf #1} \hfill #4\\
+\noindent #2 \hfill {\bf #3}\\
 \vspace{-6mm}
 }
 
