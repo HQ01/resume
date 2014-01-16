@@ -15,9 +15,11 @@
 \setlength{\multicolsep}{6.0pt plus 2.0pt minus 1.5pt}
 
 \hoffset -1.5in
-\voffset -0.8in
-\textheight 10.4in
+\voffset -0.5in
+\textheight 10in
 \textwidth 7.8in
+
+%\usepackage[top=0.5in, bottom=0.5in, left=0.25in, right=0.25in]{geometry}
 
 \setlength{\parskip}{0pt}
 \setlength{\parsep}{0pt}
@@ -34,9 +36,13 @@
 }
 
 % Academic honor
-% First argument: honor name
-% Second argument: Date
-\newcommand{\honor}[2]{#1 \hfill #2}
+%
+% Arguments:
+% 1. Honor name
+% 2. Date
+\newcommand{\honor}[2]{
+\noindent #1 \hfill #2 \\
+}
 
 % Horizontal line to separate sections
 \newcommand{\hr}{
@@ -47,40 +53,27 @@
 \vspace{-1mm}
 }
 
-% Job header.
-\newcommand{\job}[4]{
-\noindent {\bf #1}, #2 \hfill {\bf #3} $\vert$ #4\\
-\vspace{-6mm}
-}
-
-% Research header.
-% 1. Project name
+% Affiliation header for job or research
+%
+% Arguments:
+% 1. Company/Project Name
 % 2. Affiliation
 % 3. Language
 % 4. Dates
-\newcommand{\research}[4]{
-%\noindent {\bf #1} \hfill {\bf #3} $\vert$ #4\\
+\newcommand{\affiliation}[4]{
 \noindent {\bf #1} \hfill #4\\
 \noindent #2 \hfill {\bf #3}\\
 \vspace{-6mm}
 }
 
 % Project information
+%
+% Arguments:
+% 1. Project Name
+% 2. Project Description
+% 3. Website
+% 4. Language
+% 5. Dates
 \newcommand{\project}[5]{
-{\bf #1}: #2  & #3 & {\bf #4} & #5 \\
+{\bf #1}: #2  & #3 & {\bf #4} & \hfill #5 \\
 }
-
-% Commands used for typesetting publication
-\newcommand{\aSpace}{\\ \indent \; \;}
-\newcommand{\aItem}{\; \; \longrightarrow}
-\newcommand{\publication}[1]{
-\vspace{-2mm}
-$\aItem$ {\bf Publication:} #1
-\vspace{2mm}
-}
-
-% Activity
-\newcommand{\activity}[2]{
-\item {\bf #1}: #2
-}
-
