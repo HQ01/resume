@@ -1,4 +1,4 @@
-\ProvidesClass{onkursen-resume}[2013/03/12 Onkur Sen Resume Class]
+\ProvidesClass{onkursen-resume}[2014/10/16 Onkur Sen Resume Class]
 
 \NeedsTeXFormat{LaTeX2e}
 \PassOptionsToClass{10pt}{article}
@@ -6,6 +6,8 @@
 
 \RequirePackage{mdwlist}
 \RequirePackage{hyperref}
+\RequirePackage{tabularx}
+\RequirePackage{fancyhdr}
 
 \RequirePackage[compact]{titlesec}
 \titlespacing{\section}{0pt}{*0}{*0}
@@ -15,11 +17,9 @@
 \setlength{\multicolsep}{6.0pt plus 2.0pt minus 1.5pt}
 
 \hoffset -1.5in
-\voffset -0.5in
-\textheight 10in
+\voffset -0.7in
+\textheight 10.2in
 \textwidth 7.8in
-
-%\usepackage[top=0.5in, bottom=0.5in, left=0.25in, right=0.25in]{geometry}
 
 \setlength{\parskip}{0pt}
 \setlength{\parsep}{0pt}
@@ -74,6 +74,6 @@
 % 3. Website
 % 4. Language
 % 5. Dates
-\newcommand{\project}[5]{
-{\bf #1}: #2  & #3 & {\bf #4} & \hfill #5 \\
+\newcommand{\project}[4]{
+{\bf #1}: #2  & \hfill {\bf #3} & \hfill #4 \\
 }
